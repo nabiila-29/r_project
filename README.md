@@ -1,6 +1,6 @@
-<h1> Shiny App 101 <h1>
+# Shiny App 101
 
-<h2> Shiny Component <h2>
+## Shiny Component
     
 1. UI
     a. Input
