@@ -2,7 +2,8 @@
 
 ## Shiny Component
     
-1. UI
+1. UI object
+   - Defined by `fluidPage()` function
 
     a. Input
     
