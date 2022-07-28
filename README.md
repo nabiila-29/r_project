@@ -25,18 +25,40 @@ Allows us to create rich, interactive web apps
         &emsp; _shiny input UI_  (`sliderInput()`, `selectInput()`, etc)  
         - `mainPanel()`  
          &emsp; _shiny output UI_ (`plotOutput()`, `ImageOutput()`, etc)  
+           
+UI Packages: https://github.com/nanxstats/awesome-shiny-extensions
     
 ### 2. Server
 Defined by `function (input, output) {}`  
 _shiny output server_ (`renderPlot()`,  `renderText()`, etc) :  
-- output$_output_name_in_ui_  
-- input$_input_name_in_ui_  
+- `output$<outputId>` in ui   
+- `input$<inputId>` in ui  
 
 ```    
-  Output$_output_name_ <- rendertype({ input$_inputname_ }) 
+  Output$<outputId> <- rendertype({ input$<inputId> }) 
     
   Output$product <- renderText({ input$x * 5 })
-```
+```  
+  
+#### [Reactive Expression](youtube.com/watch?v=cqOUpnF-Lco)  
+Create our own reactive variable:  
+`reactive({...})`  
+  
+ wrong:  
+ ```  
+  server <- function (input, output) {  
+    x <- input$num +1  
+  }  
+ ```  
+ 
+  correct:  
+ ```  
+  server <- function (input, output) {  
+    x <- reactive ({ input$num +1 }) 
+  }  
+ ```  
+
+
 
 ## B. BASIC INPUT AND OUTPUT IN SHINY
 [cheatsheet](https://shiny.rstudio.com/articles/cheatsheet.html)
