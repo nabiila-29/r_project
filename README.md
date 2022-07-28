@@ -1,21 +1,27 @@
 
 # Shiny App 101
 
-## Shiny Component
+## A. Shiny Component
     
-1. UI object
-   - Defined by `fluidPage()` function. consist of:
-   - `titlePane()`  
-   1.2. `SidebarLayout()`  
-        &emsp; 1.2.1. `SidebarPanel()`    
-        &emsp; _shiny input_  
-        &emsp; 1.2.2. `mainPanel()`  
+### 1. UI  
+   Defined by `fluidPage()` function. consist of:  
+   - `titlePanel()`  
+   - `SidebarLayout()`  
+        - `SidebarPanel()`  
+        &emsp; _shiny input UI_  (`sliderInput()`, `selectInput()`, etc)  
+        - `mainPanel()`  
+         &emsp; _shiny output UI_ (`plotOutput()`, `ImageOutput()`, etc)  
+    
+### 2. Server
+Defined by `function (input, output) {}`  
+_shiny output server_ (`renderPlot()`,  `renderText()`, etc) :  
+- output$_output_name_in_ui_  
+- input$_input_name_in_ui_  
 
-    a. Input
+## B. BASIC INPUT AND OUTPUT IN SHINY
+[cheatsheet](https://shiny.rstudio.com/articles/cheatsheet.html)
+
     
-    b. Output
-    
-2. Server
 
 
 
@@ -29,5 +35,6 @@
           
     1.3.  
     
+        
 
 
