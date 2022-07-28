@@ -6,6 +6,7 @@ Mastering Shiny: https://mastering-shiny.org/preface.html
   
 Shiny Cheatsheet: https://shiny.rstudio.com/articles/cheatsheet.html  
 Shiny Gallery: https://shiny.rstudio.com/gallery/  
+Shiny documentation:  https://www.rdocumentation.org/packages/shiny/versions/1.7.1
 
 ## What is Shiny?  
 Shiny is an R package. 
@@ -30,6 +31,12 @@ Defined by `function (input, output) {}`
 _shiny output server_ (`renderPlot()`,  `renderText()`, etc) :  
 - output$_output_name_in_ui_  
 - input$_input_name_in_ui_  
+
+```    
+  Output$_output_name_ <- rendertype({ input$_inputname_ }) 
+    
+  Output$product <- renderText({ input$x * 5 })
+```
 
 ## B. BASIC INPUT AND OUTPUT IN SHINY
 [cheatsheet](https://shiny.rstudio.com/articles/cheatsheet.html)
