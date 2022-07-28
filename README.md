@@ -60,7 +60,7 @@ Create our own reactive variable:
 
 
 
-## B. BASIC INPUT AND OUTPUT IN SHINY
+## B. Basic Input and Output Couple in Shiny
 [cheatsheet](https://shiny.rstudio.com/articles/cheatsheet.html)
 
 ## [C. APPLICATION LAYOUT GUIDE](https://shiny.rstudio.com/articles/layout-guide.html)  
@@ -78,5 +78,5 @@ Example: `tabsetPanel()` , `navlistPanel()`
   
   
 ## R tips  
-?function_name:generate detail of funciton
+?function_name:generate detail of function
 
