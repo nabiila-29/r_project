@@ -7,6 +7,13 @@ Mastering Shiny: https://mastering-shiny.org/preface.html
 Shiny Cheatsheet: https://shiny.rstudio.com/articles/cheatsheet.html  
 Shiny Gallery: https://shiny.rstudio.com/gallery/  
 
+## What is Shiny?  
+Shiny is an R package. 
+Allows us to create rich, interactive web apps  
+  
+- Provide UI that could generate HTML, CSS, Javascripts for common tasks
+- Reactive programming: input change, output change
+
 ## A. Shiny Component
     
 ### [1. UI](https://shiny.rstudio.com/tutorial/written-tutorial/lesson2/)    
