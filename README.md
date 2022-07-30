@@ -6,7 +6,8 @@ Mastering Shiny: https://mastering-shiny.org/preface.html
   
 Shiny Cheatsheet: https://shiny.rstudio.com/articles/cheatsheet.html  
 Shiny Gallery: https://shiny.rstudio.com/gallery/  
-Shiny documentation:  https://www.rdocumentation.org/packages/shiny/versions/1.7.1
+Shiny documentation:  https://www.rdocumentation.org/packages/shiny/versions/1.7.1  
+Shiny function reference: https://shiny.rstudio.com/reference/shiny/
 
 ## What is Shiny?  
 Shiny is an R package. 
@@ -25,7 +26,13 @@ Allows us to create rich, interactive web apps
         &emsp; _shiny input UI_  (`sliderInput()`, `selectInput()`, etc)  
         - `mainPanel()`  
          &emsp; _shiny output UI_ (`plotOutput()`, `ImageOutput()`, etc)  
-           
+             
+#### Inputs
+1.1. Inputs  
+Common Structure : `inputId` , `label` , `value` , unique parameter (different in any control).  
+bootstrap UI: <http://bootstrapdocs.com/v3.3.6/docs/css/#buttons>  
+
+
 UI Packages: https://github.com/nanxstats/awesome-shiny-extensions
     
 ### 2. Server
