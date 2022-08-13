@@ -14,6 +14,10 @@ R is a language we use when we want to communicate and ask computer to do statis
 Simply, R has two type of syntax.
 1. Basic Syntax  
 We can use this syntax directly after install R 
+  
+`?<function>` : to see the documentation of function  
+example: `?plot`
+    
 2. Package Syntax  
 We need to install and call the package first before use the syntax.  
 `library(<package_name>)`
@@ -37,7 +41,16 @@ We need to install and call the package first before use the syntax.
 
 we can call those with package named **'pacman'**. Yess. basically **pacman** is lke package bundling. package inside package.  
 
-**datasets** packages is also popular for newbie because with it, we can load datasets in a simple way and explore R syntax there.  
+**datasets** packages is also popular for newbie because with it, we can load datasets in a simple way and explore R syntax there. We can assign the dataset to variable to see the whole data.  
+```
+library(datasets)   #load package  
+data()              #see list of datasets available
+iris <- iris        # assign dataset to variable to see the whole dataset 
+```
+
+# Basic Syntax for Data Pre-processing
+- head() : see the data head. the default is the first 6 rows.  ***#kayaknya sih inside package 'datasets'***
+
 
 
 
