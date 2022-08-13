@@ -51,9 +51,36 @@ Data Types is level measurements of variable.
 
 ## Data Structures  
 1. Vector  
-2. Matrix/ Array  
-3. Data Frame  
+- 1 or more number in 1 dimentional array. In a straight line  
+- All same data type. All integer for example  
+- R basic data object  
+
+2. Matrix / Array  
+** Matrix **
+- has rows and columns. 2 dimentional data
+- the columns are all need to be the same length
+- the data are all need to be the same class  
+- column are not named, but reffered to by index numbers  
+  
+** Array  
+- Identical to Matrix bur 3 dimention.  
+
+
+3. Data Frame 
+- 2 dimentional collection that can have vectors of multiples data type. We can have character, integer, or boolean in a data frame.  
+- The trick is all of those must be in the same length  
+- Closest R analogue to spreadsheet  
+- R has special functions to working with data frame  
+  
+
 4. List  
+- Most flexible data format. We can put anything in a list  
+- It's orders collection of elements.
+- We can have any class, length, or structure  
+- list can include list (nested list)  
+
+
+
 
 
 
