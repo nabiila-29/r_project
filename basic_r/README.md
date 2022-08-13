@@ -79,6 +79,51 @@ Data Types is level measurements of variable.
 - We can have any class, length, or structure  
 - list can include list (nested list)  
 
+## Coersion in Data World  
+**Coersion** is changing data object from one type to another. Changing the level of measurement or chancing the nature of the variable that we are dealing with.  
+Example:  
+- change character to logical  
+- matrix to data frame  
+- double to integer
+etc.  
+```  
+## NUMERIC ----------------  
+n1 <- 15  #double precision  
+n1  
+typeof(n1)    #show the data structure / low level of datatype  
+  
+## VECTOR -----------------  
+v1 <- c(1, 2, 3, 4, 5)  
+v1  
+is.vector(v1)     # check whether it is vector or not  
+  
+## MATRIX -----------------  
+m1 <- matrix(c( T, T,
+                F, F,
+                T, F),
+                nrow = 3,
+                byrow = TRUE)  #True mean matrix will be filled by rows. The    default is FALSE
+m1  
+  
+## ARRAY ----------------  
+a1 <- array(c( 1:24 ), c(4,3,3))   # row column, table. table mean row x column will be retrieve in how many table
+a1
+  
+## DATA FRAME ---------------------  
+# can combine vectors of the same lenght 
+  
+vNumeric    <- c(1,2,3)  
+vCharacter  <- c("a","b","c")  
+vLogical    <- c(T,F,T)  
+  
+dfa <- cbind(vNumeric,vCharacter,vLogical)  
+dfa                   # matrix of one data type. not a data frame  
+  
+  
+df <- as.data.frame(cbind(vNumeric,vCharacter,vLogical))  #function to change to data frame 
+df  
+
+```
 
 
 
