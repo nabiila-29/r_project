@@ -33,6 +33,10 @@ We need to install and call the package first before use the syntax.
 
 - ggplot2: -the most common packages for creating graph and data viz in R  
 
-- shiny: -for interactive applications that you install on websites.  
+- shiny: -for interactive applications that you install on websites.
+
+we can call those with package named **'pacman'**. Yess. basically **pacman** is lke package bundling. package inside package.  
+
+
 
 
