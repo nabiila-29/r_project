@@ -37,6 +37,8 @@ We need to install and call the package first before use the syntax.
 
 we can call those with package named **'pacman'**. Yess. basically **pacman** is lke package bundling. package inside package.  
 
+**datasets** packages is also popular for newbie because with it, we can load datasets in a simple way and explore R syntax there.  
+
 
 
 
