@@ -34,7 +34,27 @@ We need to install and call the package first before use the syntax.
 - ggplot2: -the most common packages for creating graph and data viz in R  
 
 - shiny: -for interactive applications that you install on websites.  
+  
+# Basic Syntax for Pre-Processing  
+Using package `datasets` we can easily retrieve datasets and explore R funciton there  
+```
+library(datasets)           #import library  
 
+data()                      # show list of datasets available  
+
+iris <- iris                # assign datasets to variable to know the whole dataset  
+head(iris)                  #retrieve first 6 rows of dataset  
+plot(iris$Species)          #plot of dataset specific column  
+plot(iris$Sepal.Length)     #plot of dataset specific column  
+plot(iris$Petal.Width)      #plot of dataset specific column  
+  
+?plot                       #show function documentation  
+summary(iris)               #show statistical summary  
+
+```
+  
+  
+  
 # Data Formats in R  
 Like apple and Orange. sometimes we talk about two different things.  
 
@@ -123,9 +143,15 @@ dfa                   # matrix of one data type. not a data frame
 df <- as.data.frame(cbind(vNumeric,vCharacter,vLogical))  #function to change to data frame 
 df  
 
-```
-
-
+```  
+There are two ways to check the data strucuture:  
+`class()` : tell us the high-level data type (DATA TYPE)  
+`typeof()` : tell us the low-level data type (DATA STRUCTURE)  
+  
+example:  
+matrix case~  
+`class()` : matrix, array   
+`typeof() : character  
 
 
 
