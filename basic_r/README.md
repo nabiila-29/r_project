@@ -56,13 +56,13 @@ Data Types is level measurements of variable.
 - R basic data object  
 
 2. Matrix / Array  
-** Matrix **
+**Matrix**
 - has rows and columns. 2 dimentional data
 - the columns are all need to be the same length
 - the data are all need to be the same class  
 - column are not named, but reffered to by index numbers  
   
-** Array  
+**Array**  
 - Identical to Matrix bur 3 dimention.  
 
 
