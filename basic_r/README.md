@@ -151,8 +151,23 @@ There are two ways to check the data strucuture:
 example:  
 matrix case~  
 `class()` : matrix, array   
-`typeof() : character  
+`typeof()` : character  
 
-
+```  
+## LIST ----------------------  
+  
+o1 <- c(1,2,3)  #object one  
+o2 <- c("a","b","c","d")  
+o3 <- c(T,F,T,T,F)  
+  
+list1 <- list(o1,o2,o3)  
+list1                             #the vector become list. symbolize with [[ ]]  
+  
+list2 <- list(o1,o2,o3, list1)  
+list2                             # list inside list     
+  
+```  
+[[ ]] : list  
+[ ]   : vector (maybe)
 
 
