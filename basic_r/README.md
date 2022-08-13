@@ -76,13 +76,13 @@ Data Types is level measurements of variable.
 - R basic data object  
 
 2. Matrix / Array  
-**Matrix**
+### Matrix###
 - has rows and columns. 2 dimentional data
 - the columns are all need to be the same length
 - the data are all need to be the same class  
 - column are not named, but reffered to by index numbers  
   
-**Array**  
+###Array###  
 - Identical to Matrix bur 3 dimention.  
 
 
@@ -106,30 +106,39 @@ Example:
 - matrix to data frame  
 - double to integer
 etc.  
+  
+#### NUMERIC ----------------  
 ```  
-## NUMERIC ----------------  
 n1 <- 15  #double precision  
 n1  
 typeof(n1)    #show the data structure / low level of datatype  
+```  
   
-## VECTOR -----------------  
+#### VECTOR -----------------  
+``` 
 v1 <- c(1, 2, 3, 4, 5)  
 v1  
 is.vector(v1)     # check whether it is vector or not  
+```  
   
-## MATRIX -----------------  
+#### MATRIX -----------------  
+```  
 m1 <- matrix(c( T, T,
                 F, F,
                 T, F),
                 nrow = 3,
                 byrow = TRUE)  #True mean matrix will be filled by rows. The    default is FALSE
 m1  
-  
-## ARRAY ----------------  
+```  
+
+#### ARRAY ----------------  
+```  
 a1 <- array(c( 1:24 ), c(4,3,3))   # row column, table. table mean row x column will be retrieve in how many table
 a1
-  
-## DATA FRAME ---------------------  
+```   
+
+#### DATA FRAME ---------------------  
+```  
 # can combine vectors of the same lenght 
   
 vNumeric    <- c(1,2,3)  
@@ -153,9 +162,9 @@ matrix case~
 `class()` : matrix, array   
 `typeof()` : character  
 
-```  
-## LIST ----------------------  
-  
+
+#### LIST ----------------------  
+```    
 o1 <- c(1,2,3)  #object one  
 o2 <- c("a","b","c","d")  
 o3 <- c(T,F,T,T,F)  
@@ -169,5 +178,8 @@ list2                             # list inside list
 ```  
 [[ ]] : list  
 [ ]   : vector (maybe)
-
+  
+#### COERCING TYPES  
+1:18:36  
+https://www.youtube.com/watch?v=_V8eKsto3Ug  
 
