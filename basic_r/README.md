@@ -208,5 +208,27 @@ is.matrix(coerce6)                    #check whether it is matrix or not
 is.data.frame(coerce7) 
 ```  
   
+# Factors in R  
+Factors  have to do with Categories and Names.  
+Factors: An "attribute" of a vector that specifies the possible values and their order.  
+  
+```  
+# Create Data  
+(x1 <- 1:3)  
+(y <- 1:9)  
+  
+# Combine variables  
+(df1 <- cbind.data.frame(x1, y))      #combine two integer variables
+typeof(df1$x1)                        #check the type of specific. detected as integer column  
+str(df1)                              #check the structure of data frame  
+  
+# as.factor  
+(x2 <- as.factor(c(1:3)))  
+(df2 <- c.bind.data.frame(x2,y))  
+typeof(df2$x2)                        #here detected as integer, but
+str(df2)                              #here detected as factor
+  
+```
+  
 
 
