@@ -76,13 +76,13 @@ Data Types is level measurements of variable.
 - R basic data object  
 
 2. Matrix / Array  
-### Matrix###
+***Matrix***
 - has rows and columns. 2 dimentional data
 - the columns are all need to be the same length
 - the data are all need to be the same class  
 - column are not named, but reffered to by index numbers  
   
-###Array###  
+***Array***  
 - Identical to Matrix bur 3 dimention.  
 
 
@@ -179,7 +179,34 @@ list2                             # list inside list
 [[ ]] : list  
 [ ]   : vector (maybe)
   
-#### COERCING TYPES  
-1:18:36  
-https://www.youtube.com/watch?v=_V8eKsto3Ug  
+## Coersing Types 
+### Automatic Coersion  
+```  
+#Goes to "least restrictive" data type"
+(coerce1 <- c(1, "b", TRUE"))     #pharanthesis is for auto print the result  
+typeof(coerce1)                   #check the data type  
+  
+# Coerce numeric to integer  
+(coerce2 <- 5)  
+typeof(coerce2)  
+  
+(coerce3 <- as.integer(5))  #change to data type
+typeof(coerce3)  
+  
+#Coerce character to numeric  
+(coerce4 <- c("1", "2", "3"))  
+typeof(coerce4)  
+  
+(coerce5 <- as.numeric(c("1", "2", "3"))      # change character to double precision)
+typeof(coerce5)  
+  
+#coerce matrix to data frame  
+(coerce6 <- matrix(1:9, nrow = 3))  
+is.matrix(coerce6)                    #check whether it is matrix or not  
+  
+(coerce7 <- as.data.frame(matrix(1:9, nrow = 3)))  #dijadikan data frame  
+is.data.frame(coerce7) 
+```  
+  
+
 
