@@ -253,6 +253,8 @@ str(df4)
   
   
 # Ordered Factors and Labels  
+x5  <- c(1:3)  
+df5
 ```
   
 
