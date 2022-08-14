@@ -179,8 +179,8 @@ list2                             # list inside list
 [[ ]] : list  
 [ ]   : vector (maybe)
   
-## Coersing Types 
-### Automatic Coersion  
+### Coersing Types 
+#### Automatic Coersion  
 ```  
 #Goes to "least restrictive" data type"
 (coerce1 <- c(1, "b", TRUE"))     #pharanthesis is for auto print the result  
