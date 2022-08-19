@@ -285,8 +285,16 @@ head()  : see the head of data
 view()  : invoke a data viewer. see the dataframe  
   
 for tect file, `read.table( file.txt, header = TRUE, sep "\t")`.    
+# Modeling Data  
+## Hierarchical Clustering  
+Like with Like. 
 
-
+%>%: Allow us to take the result of one step and feed it directly in as the input of the next step. 
+  
+```
+hc <- cars    %>%     # Get cars data, the result for next step  
+      dist    %>%     # compute distance matrix, the result for next step  
+      hclust  %>%     # compete hierarchical cluster  
 
 
 
