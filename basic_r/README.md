@@ -294,7 +294,5 @@ Like with Like.
 ```
 hc <- cars    %>%     # Get cars data, the result for next step  
       dist    %>%     # compute distance matrix, the result for next step  
-      hclust  %>%     # compete hierarchical cluster  
-
-
-
+      hclust  %>%     # compute hierarchical cluster  
+```  
