@@ -256,6 +256,19 @@ str(df4)
 x5  <- c(1:3)  
 df5
 ```
-  
 
+# Accessing Data  
+## Entering Data (Ad hoc Data)  
+### colon
+### seq  
+Short of sequence. Will be retrieve sequence of data.  
+### c 
+Short of concantentate. To enter an arbitrary (random) collection of number in different order. It also stand for "combine" or "collect".  
+### scan  
+Entering data live. Enter object from the console. enter twice to input the objects.  
+### rep  
+Rep stand for repetition. `rep(TRUE, 5)`. It will return to TRUE printed 5 times.  
+### <-  (assignment operator in R)  
+  
+# Importing Data  
 
