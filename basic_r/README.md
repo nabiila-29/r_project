@@ -271,4 +271,22 @@ Rep stand for repetition. `rep(TRUE, 5)`. It will return to TRUE printed 5 times
 ### <-  (assignment operator in R)  
   
 # Importing Data  
+Kind of data we could import in R  
+1. csv.  
+2. txt.  
+3. xlsx.  
+4. json.  (web)
+  
+Choose one to make it easy. There package named rio. (R input output). Rio combine all of R's import functions into one simple utility with consistence syntax and functionality.  
+
+using rio `import()`.  Dont' need to specify the .csv.  Same for reading .txt file.  Same with xlsx. file.  
+  
+head()  : see the head of data  
+view()  : invoke a data viewer. see the dataframe  
+  
+for tect file, `read.table( file.txt, header = TRUE, sep "\t")`.    
+
+
+
+
 
