@@ -40,10 +40,31 @@ Using package `datasets` we can easily retrieve datasets and explore R funciton 
 ## Import Data  
 ```  
 demo <- read.csv("demographics.csv")        #import file  
-head(demo)                                  #retrieve first 6 rows of dataset 
-view(demo)                                  #view dataframe 
-```  
+```   
   
+  
+# Data Understanding  
+view(demo)                                  #view dataframe  
+head(demo)                                  #retrieve first 6 rows of dataset  
+tail()  
+dim()                                       #dimension  
+names()                                     #column name  
+glimpse()                                   #show the structure of data frame  
+unique()  
+length(unique())  
+  
+  
+mean()  
+median()  
+range()  
+summary()  
+  
+mean(example$salary, na.rm = TRUE)    # see missing value  
+is.na()                               # if a value is missing  
+sum(is.na())  
+example[is.na(example)] <- 0         # change null value to 0  
+
+
   
 ## Filtering Records  
 ```
@@ -60,9 +81,9 @@ demo2 <- subset (demo, marital == "Married" & Age > 35, c(1:3)
 ```  
 ## Sorting data frames  
 ```
-demo2 <- demo[order(demo$income),]        #asc  
-demo2 <- demo[order(-demo$income),]       #desc  
-demo2 <- demo[order(demo$income, demo$age),]    # multiple column   
+demo2 <- demo[order(demo$income),]              #asc  
+demo2 <- demo[order(-demo$income),]             #desc  
+demo2 <- demo[order(demo$income, demo$age),]    # multiple column demo2 <- demo[order(-demo$income, demo$age),]  
 
 ```
    
