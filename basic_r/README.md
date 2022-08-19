@@ -37,14 +37,18 @@ We need to install and call the package first before use the syntax.
   
 # Basic Syntax for Pre-Processing  
 Using package `datasets` we can easily retrieve datasets and explore R funciton there  
-- `demo <- read.csv("demographics.csv")`      #import file  
-- `head(demo)`                                #retrieve first 6 rows of dataset 
-- `view(demo)`                                #view dataframe  
-- `demo2 <- demo[demo$gender == "Female", ]   #new variable, only show Female  
-- `demo2 <- demo[demo$income >100, ]           # new var, condititon`  
-- `demo2 <- demo[demo$income >100, c(1,3,7)]`           # new var, only  show 1,3,7 variable/column  
-- `demo2 <- demo[demo$income >100, -c(6:8)]` #exclude 6-8th column  
-- ``
+## Filtering Records  
+```
+demo <- read.csv("demographics.csv")        #import file  
+head(demo)                                  #retrieve first 6 rows of dataset 
+view(demo)                                  #view dataframe  
+  
+demo2 <- demo[demo$gender == "Female", ]    #new variable, only show Female  
+demo2 <- demo[demo$income >100, ]           # new var, condititon 
+demo2 <- demo[demo$income >100, c(1,3,7)]   # new var, only  show 1,3,7 variable/column  
+demo2 <- demo[demo$income >100, -c(6:8)]    #exclude 6-8th column
+demo2 <-demo[demo$gender == "Female" & demo$income > 100,]  
+```
    
    
    
