@@ -53,7 +53,18 @@ demo2 <- demo[demo$income >100, c(1,3,7)]                         # new var, onl
 demo2 <- demo[demo$income >100, -c(6:8)]                          # exclude 6-8th column
 demo2 <-demo[demo$gender == "Female" & demo$income > 100,]  
 ```
-   
+## Create Subsets  
+```
+demo2 <- subset (demo, marital == "Married" & Age > 35)                 #select data that meet the condition. tidak merubah dataframe aslinya seperti yg atas.  
+demo2 <- subset (demo, marital == "Married" & Age > 35, c(1:3)  
+```  
+## Sorting data frames  
+```
+demo2 <- demo[order(demo$income),]        #asc  
+demo2 <- demo[order(-demo$income),]       #desc  
+demo2 <- demo[order(demo$income, demo$age),]    # multiple column   
+
+```
    
    
    
